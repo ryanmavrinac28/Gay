@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html >
+<head>
+<title>Your Gay</title>
+<meta charset="UTF-8">
+</head>
+<style>
+body {
+background:#000;
+overflow:hidden;
+}
+pre {
+font-weight: 900; 
+text-align: center;
+top: 50px;
+position: relative;
+font-size:12px;
+letter-spacing:4px;
+}
+</style>
+<body>
+<body bgcolor = 000022>
+<pre>Hacked By: Lake Ca$h</pre>
+<pre>Hacked By: Lake Ca$h</pre>
+<pre>Hacked By: Lake Ca$h</pre>
+<pre>Hacked By: Lake Ca$h</pre>
+<pre>Hacked By: Lake Ca$h</pre>
+<pre>Hacked By: Lake Ca$h</pre>
+<pre>Hacked By: Lake Ca$h</pre>
+<pre>Hacked By: Lake Ca$h</pre>
+<pre>Hacked By: Lake Ca$h</pre>
+<pre>Hacked By: Lake Ca$h</pre>
+<pre>Hacked By: Lake Ca$h</pre>
+<pre>Hacked By: Lake Ca$h</pre>
+<pre>Hacked By: Lake Ca$h</pre>
+<pre>Hacked By: Lake Ca$h</pre>
+<pre>Hacked By: Lake Ca$h</pre>
+<pre>Hacked By: Lake Ca$h</pre>
+<pre>Hacked By: Lake Ca$h</pre>
+<pre>Hacked By: Lake Ca$h</pre>
+<pre>Hacked By: Lake Ca$h</pre>
+<pre>Hacked By: Lake Ca$h</pre>
+</body>
+<script>
+var pre = document.querySelectorAll("pre");
+var colors = ["red","orange","yellow","chartreuse","cyan","violet","purple","purple","indigo","red","orange","yellow","chartreuse","cyan","violet","purple","purple","indigo"];
+var tempColors = [];
+
+
+setInterval(function(){
+  
+for (i=0; i < pre.length; i++)
+  {
+    if (i == pre.length-1)
+      {
+        tempColors[i] = colors[0];
+        colors = tempColors;
+      }
+    else
+      {
+        tempColors[i] = colors[i+1];
+      }
+    pre[i].style.color = tempColors[i];
+  };
+
+},60);
+</script>
+</body>
+</html>
