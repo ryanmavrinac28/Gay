@@ -1,75 +1,119 @@
 <!DOCTYPE html>
-<html >
+<!--- Made By: Cayden --->
+
+<!---
+            O O
+           dO Ob
+          dOO OOO
+         dOOO OOOb
+        dOOOO OOOOb
+        OOOOO OOOOO
+        OOOOO OOOOO
+        OOOOO OOOOO
+        YOOOO OOOOO
+         YOOO OOOP
+    oOOOOOOOOOOOOb
+  oOOOOOOOOOOOOOOOb
+ oOOOb dOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOO
+OOOOOOOOOOOOOOOOOOP
+OOOOOOOOOOOOOOOOOP
+ YOOOOOOOOOOOOOOP
+   YOOOOOOOOOOOP
+  %%%%%%%%%%%%%%
+ %%%%%%OOOjgsOOO
+--->
+
+<!--- Made By: Cayden --->
+
+<html>
 <head>
 <title>Lake Ca$h</title>
 <meta charset="UTF-8">
 </head>
 <style>
+html,
 body {
-background:#000;
-overflow:hidden;
+width: 100vw;
+height: 100vh;
+overflow: hidden;
+background: #C33764;
+/* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1D2671, #C33764);
+/* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1D2671, #C33764);
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-pre {
-font-weight: 900; 
+
+div.overlay {
+width: 100%;
+opacity: .75;
+h1 {
+margin: 0;
+display: block;
+color: #fff;
+font-size: 5vw;
+font-family: 'Open Sans';
+font-weight: 700;
 text-align: center;
-top: 50px;
-position: relative;
-font-size:12px;
-letter-spacing:4px;
 }
+}
+
+
+/* Utility */
+
+.abs {
+position: absolute;
+}
+
+.left {
+left: 5px
+}
+
+;
+.right {
+right: 5px;
+}
+
+.bottom {
+bottom: 5px;
+}
+
+.top {
+top: 5px;
+}
+
+.hcenter {
+left: 50%;
+transform: translateX(-50%);
+}
+
+.vcenter {
+top: 50%;
+transform: translateY(-50%);
+}
+
+.center {
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.overlay {
+z-index: 999;
+}
+
+.hidden {
+display: none
+}
+
+;
 </style>
 <body>
-<body bgcolor = 000022>
-<pre>Lake Ca$h</pre>
-<pre>Lake Ca$h</pre>
-<pre>Lake Ca$h</pre>
-<pre>Lake Ca$h</pre>
-<pre>Lake Ca$h</pre>
-<pre>Lake Ca$h</pre>
-<pre>Lake Ca$h</pre>
-<pre>Lake Ca$h</pre>
-<pre>Lake Ca$h</pre>
-<pre>Lake Ca$h</pre>
-<pre>Lake Ca$h</pre>
-<pre>Lake Ca$h</pre>
-<pre>Lake Ca$h</pre>
-<pre>Lake Ca$h</pre>
-<pre>Lake Ca$h</pre>
-<pre>Lake Ca$h</pre>
-<pre>Lake Ca$h</pre>
-<pre>Lake Ca$h</pre>
-<pre>Lake Ca$h</pre>
-<pre>Lake Ca$h</pre>
-<pre>Lake Ca$h</pre>
-<pre>Lake Ca$h</pre>
-<pre>Lake Ca$h</pre>
-<pre>Lake Ca$h</pre>
-<pre>Lake Ca$h</pre>
-<pre>Lake Ca$h</pre>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
+<div class="abs center overlay">
+<h1>♂ + ♂ = Lake Cash</h1>
+</div>
 </body>
-<script>
-var pre = document.querySelectorAll("pre");
-var colors = ["red","orange","yellow","chartreuse","cyan","violet","purple","purple","indigo","red","orange","yellow","chartreuse","cyan","violet","purple","purple","indigo","red","orange","yellow","chartreuse","cyan","violet","purple","purple","indigo","red","orange","yellow","chartreuse","cyan","violet","purple","purple","indigo"];
-var tempColors = [];
-
-
-setInterval(function(){
-  
-for (i=0; i < pre.length; i++)
-  {
-    if (i == pre.length-1)
-      {
-        tempColors[i] = colors[0];
-        colors = tempColors;
-      }
-    else
-      {
-        tempColors[i] = colors[i+1];
-      }
-    pre[i].style.color = tempColors[i];
-  };
-
-},60);
-</script>
 </body>
 </html>
