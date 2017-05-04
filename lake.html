@@ -5,85 +5,49 @@
 <meta charset="UTF-8">
 </head>
 <style>
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:700);
-body {
-width: 100vw;
-height: 100vh;
-overflow: hidden;
-background: #C33764;
-background: -webkit-linear-gradient(to right, #1D2671, #C33764);
-background: linear-gradient(to right, #1D2671, #C33764);
+body { 
+background: #000;
 }
-           
-div.overlay {
-width: 100%;
-opacity: .75;
-}
-           
+
 h1 {
-margin: 0;
-display: block;
-color: #fff;
-font-size: 5vw;
-font-family: 'Open Sans';
-font-weight: 700;
+font: 600 1.5em/1 'Raleway', sans-serif;
+color: rgba(0,0,0,.5);
 text-align: center;
-}
-}
-
-.abs {
+text-transform: uppercase;
+letter-spacing: .5em;
 position: absolute;
+top: 25%;
+width: 100%;
 }
 
-.left {
-left: 5px
+span, span:after {
+font-weight: 900;
+color: #fff;
+white-space: nowrap;
+display: inline-block;
+position: relative;
+letter-spacing: .1em;
+padding: .2em 0 .25em 0;
 }
 
-;
-.right {
-right: 5px;
+span {
+font-size: 4em;
+z-index: 100;
+text-shadow: .04em .04em 0 #9cb8b3;
 }
 
-.bottom {
-bottom: 5px;
-}
-
-.top {
-top: 5px;
-}
-
-.hcenter {
-left: 50%;
-transform: translateX(-50%);
-}
-
-.vcenter {
-top: 50%;
-transform: translateY(-50%);
-}
-
-.center {
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-}
-
-.overlay {
-z-index: 999;
-}
-
-.hidden {
-display: none;
+span:after {
+content: attr(data-shadow-text);
+color: rgba(0,0,0,.35);
+text-shadow: none;
+position: absolute;
+left: .0875em;
+top: .0875em;
+z-index: -1;
+-webkit-mask-image: url(http://f.cl.ly/items/1t1C0W3y040g1J172r3h/mask.png);
 }
 </style>
 <body>
-<p hidden>
------------- Made By: Cayden ------------
-
------------- Made By: Cayden ------------
-</p>
-<div class="abs center overlay">
-<h1>♂ + ♂ = Lake Cash</h1>
-</div>
+<h1><br><span data-shadow-text="Text-Shadow">Lake Cash</span><br></h1>
 </body>
 </html>
